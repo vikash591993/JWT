@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example.JWT'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'io.jsonwebtoken:jjwt-api:0.11.1'
+    runtime 'io.jsonwebtoken:jjwt-impl:0.11.1'
+    runtime 'io.jsonwebtoken:jjwt-jackson:0.11.1'
+    implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.2'
+
+}
